@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowsalraj R | Premium Flutter & Mobile Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Gowsalraj R, a results-driven Flutter Developer specializing in high-performance Android & iOS apps with Riverpod, Provider, and MVVM.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Glow Background Spheres -->
+    <div class="glow-sphere sphere-1"></div>
+    <div class="glow-sphere sphere-2"></div>
+    <div class="glow-sphere sphere-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="bracket">&lt;</span>Gowsalraj<span class="accent">.dart</span><span class="bracket">&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">Experience</a>
+                <a href="#sandbox">Sandbox</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="mobile-nav" id="mobile-nav-panel">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">Experience</a>
+        <a href="#sandbox" class="mobile-link">Sandbox</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge-new">
+                        <span class="pulse-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Gowsalraj R</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I craft <span id="typing-text">beautiful mobile apps</span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Results-driven **Flutter Developer** with hands-on experience building high-performance cross-platform applications for Android and iOS using Dart, Riverpod, Provider, and MVVM clean architecture.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary">
+                            Let's Connect <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            View My Work
+                        </a>
+                    </div>
+                    <div class="hero-quick-stats">
+                        <div class="stat-item">
+                            <h3>Android & iOS</h3>
+                            <p>Cross-Platform</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Riverpod / BLoC</h3>
+                            <p>State Management</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>60 FPS</h3>
+                            <p>Optimized UI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS Phone Mockup Showcase -->
+                <div class="hero-mockup-wrapper">
+                    <div class="phone-mockup">
+                        <div class="phone-notch"></div>
+                        <div class="phone-earpiece"></div>
+                        <div class="phone-camera"></div>
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                <span class="phone-time">9:41</span>
+                                <div class="phone-icons">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <i class="fa-solid fa-battery-three-quarters"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Inside Phone View -->
+                            <div class="phone-app-content">
+                                <div class="app-navbar">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Avatar" class="app-avatar">
+                                    <div class="app-nav-title">
+                                        <span class="app-welcome">Welcome back,</span>
+                                        <span class="app-username">Gowsalraj</span>
+                                    </div>
+                                    <i class="fa-regular fa-bell app-notification"></i>
+                                </div>
+
+                                <div class="app-card-balance">
+                                    <div class="app-card-overlay"></div>
+                                    <span class="app-card-label">Investment Portfolio</span>
+                                    <span class="app-card-amount">$18,452.90</span>
+                                    <div class="app-card-footer">
+                                        <span>**** 8492</span>
+                                        <span class="app-card-tag"><i class="fa-solid fa-caret-up"></i> +12.4%</span>
+                                    </div>
+                                </div>
+
+                                <div class="app-chart-section">
+                                    <div class="chart-header">
+                                        <span class="chart-title">Market Analysis</span>
+                                        <span class="chart-period">Weekly</span>
+                                    </div>
+                                    <div class="chart-bars">
+                                        <div class="chart-bar" style="--height: 40%"><span>Mon</span></div>
+                                        <div class="chart-bar active" style="--height: 75%"><span>Tue</span></div>
+                                        <div class="chart-bar" style="--height: 55%"><span>Wed</span></div>
+                                        <div class="chart-bar" style="--height: 90%"><span>Thu</span></div>
+                                        <div class="chart-bar" style="--height: 60%"><span>Fri</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="app-actions">
+                                    <div class="action-btn"><i class="fa-solid fa-paper-plane"></i><span>Send</span></div>
+                                    <div class="action-btn"><i class="fa-solid fa-qrcode"></i><span>Receive</span></div>
+                                    <div class="action-btn"><i class="fa-solid fa-chart-line"></i><span>Invest</span></div>
+                                    <div class="action-btn"><i class="fa-solid fa-ellipsis"></i><span>More</span></div>
+                                </div>
+                            </div>
+
+                            <div class="phone-home-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Journey Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <span class="section-badge">Career Roadmap</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">A timeline of my growth as a developer, software trainer, and engineer.</p>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2025 - Present</div>
+                        <div class="timeline-content glass-card">
+                            <span class="company-tag">Invaccs Private Limited, Kerala</span>
+                            <h3>Flutter Developer</h3>
+                            <p class="timeline-description">
+                                Architecting, implementing, and optimizing cross-platform mobile apps for Android & iOS.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><i class="fa-solid fa-circle-check"></i> Built cross-platform mobile apps ensuring highly responsive, pixel-perfect Material UI/UX across devices.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Integrated secure, real-time RESTful APIs with HTTP packages for complex dynamic data syncs.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Structured scalable project directories following clean **MVVM architecture** with **Riverpod & Provider** state management.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Optimized UI rendering pipeline (reducing rebuild cycles, leveraging const widgets) to guarantee smooth 60fps animations.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Configured CI/CD profiles, managed release code building, and deployed apps directly to Google Play Store & Apple App Store.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2023 - Jul 2024</div>
+                        <div class="timeline-content glass-card">
+                            <span class="company-tag">BRR Digital Private Limited (Business Partner of IBM), Chennai</span>
+                            <h3>Software Technical Trainer</h3>
+                            <p class="timeline-description">
+                                Educating and mentoring developers in computer science, coding principles, and frameworks.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><i class="fa-solid fa-circle-check"></i> Delivered technical training programs covering core programming concepts, Dart, and application structures.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Mentored over 100+ students in real-world mobile project architectures and problem-solving skills.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Evaluated codebase submissions, conducted technical project assessments, and enhanced training syllabi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018 - 2022</div>
+                        <div class="timeline-content glass-card">
+                            <span class="company-tag">Mahendra Institute of Technology</span>
+                            <h3>B.E. Electronics & Communication Engineering</h3>
+                            <p class="timeline-description">
+                                Acquired deep knowledge of software design, logic, and networking basics.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li><i class="fa-solid fa-circle-check"></i> Graduated with a high-standing **7.5 CGPA**.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Built and optimized firmware controllers, reinforcing core programming habits and algorithmic fundamentals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Flutter Sandbox Section -->
+        <section id="sandbox" class="sandbox-section">
+            <div class="section-container">
+                <span class="section-badge">Live Simulation</span>
+                <h2 class="section-title">Flutter Widget <span class="gradient-text">Sandbox</span></h2>
+                <p class="section-subtitle">Play with the sliders to customize a responsive mobile component and view the dynamically generated Dart code live!</p>
+
+                <div class="sandbox-grid">
+                    <!-- Sliders / Controls Panel -->
+                    <div class="sandbox-controls glass-card">
+                        <h3 class="panel-title"><i class="fa-solid fa-sliders"></i> Widget Controller</h3>
+                        
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label for="ctrl-radius">Border Radius (<span class="code-ref">borderRadius</span>)</label>
+                                <span class="control-value" id="val-radius">16px</span>
+                            </div>
+                            <input type="range" id="ctrl-radius" min="0" max="40" value="16" class="slider">
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label for="ctrl-padding">Padding (<span class="code-ref">padding</span>)</label>
+                                <span class="control-value" id="val-padding">24px</span>
+                            </div>
+                            <input type="range" id="ctrl-padding" min="8" max="40" value="24" class="slider">
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label for="ctrl-elevation">Elevation / Shadow Depth</label>
+                                <span class="control-value" id="val-elevation">8px</span>
+                            </div>
+                            <input type="range" id="ctrl-elevation" min="0" max="25" value="8" class="slider">
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label for="ctrl-bg">Background Gradient Vibe</label>
+                            </div>
+                            <div class="theme-picker">
+                                <button class="theme-btn active" data-color="blue" style="background: linear-gradient(135deg, #02569b, #00e5ff)"></button>
+                                <button class="theme-btn" data-color="purple" style="background: linear-gradient(135deg, #7b1fa2, #e040fb)"></button>
+                                <button class="theme-btn" data-color="orange" style="background: linear-gradient(135deg, #f57c00, #ffb74d)"></button>
+                                <button class="theme-btn" data-color="green" style="background: linear-gradient(135deg, #2e7d32, #69f0ae)"></button>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="control-header">
+                                <label for="ctrl-text">Widget Message Text</label>
+                            </div>
+                            <input type="text" id="ctrl-text" value="Build stunning apps with Flutter" placeholder="Type custom message..." class="text-input">
+                        </div>
+                    </div>
+
+                    <!-- Live Mobile Device View -->
+                    <div class="sandbox-viewer">
+                        <div class="device-mockup-mini">
+                            <div class="device-notch"></div>
+                            <div class="device-screen">
+                                <div class="device-screen-header">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span>Flutter Preview Screen</span>
+                                    <i class="fa-solid fa-wifi"></i>
+                                </div>
+                                <div class="device-screen-body">
+                                    <!-- THIS IS THE LIVE CUSTOM WIDGET -->
+                                    <div id="simulated-widget" class="simulated-widget-box">
+                                        <div class="widget-icon">
+                                            <i class="fa-brands fa-flutter"></i>
+                                        </div>
+                                        <h4 id="widget-msg">Build stunning apps with Flutter</h4>
+                                        <p class="widget-sub">MVVM • Riverpod • High-Perf</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Dart Code Panel -->
+                    <div class="sandbox-code glass-card">
+                        <div class="code-panel-header">
+                            <span><i class="fa-solid fa-code"></i> generated_widget.dart</span>
+                            <button id="copy-code-btn" class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+                        </div>
+                        <div class="code-container">
+                            <pre><code id="dart-code-block" class="language-dart">
+// Dynamic Dart Code Output
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <span class="section-badge">Real-World Case Studies</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Applications</span></h2>
+                <p class="section-subtitle">Deep dive into complete projects built with state-of-the-art mobile techniques.</p>
+
+                <!-- Project Selector Tabs -->
+                <div class="project-tabs">
+                    <button class="project-tab active" data-project="attendance">
+                        <i class="fa-solid fa-user-clock"></i> Employee Attendance Tracker
+                    </button>
+                    <button class="project-tab" data-project="support">
+                        <i class="fa-solid fa-headset"></i> Customer Care & Support App
+                    </button>
+                </div>
+
+                <!-- Projects Display Area -->
+                <div class="project-display-grid">
+                    <!-- Left: Description and Architectural details -->
+                    <div class="project-details-card glass-card">
+                        <div id="project-detail-attendance" class="project-detail-content active">
+                            <div class="project-header">
+                                <span class="project-tech-badge">Flutter</span>
+                                <span class="project-tech-badge">Dart</span>
+                                <span class="project-tech-badge">REST API</span>
+                                <span class="project-tech-badge">SQFlite</span>
+                            </div>
+                            <h3>Employee Attendance Tracker</h3>
+                            <p class="project-text">
+                                Engineered a secure, high-performance cross-platform attendance management application serving real-time employee check-in, check-out, and roster logging. Optimized for both Android and iOS devices.
+                            </p>
+                            
+                            <h4 class="info-title"><i class="fa-solid fa-microchip"></i> Architectural Features</h4>
+                            <ul class="features-list">
+                                <li><strong>JWT Authentication:</strong> Secure session handling with encrypted token storage and role-based permissions (Admin vs Employee).</li>
+                                <li><strong>Offline-First Sync:</strong> Seamless data buffering on SQFlite local database, and real-time auto-upload to server once network connection resolves.</li>
+                                <li><strong>Location Restricting:</strong> Integrates geolocation markers to authenticate check-in entries against registered work boundaries.</li>
+                            </ul>
+
+                            <div class="architecture-note">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <span><strong>MVVM Architecture:</strong> Model coordinates data schema, Views represent decoupled Dart UI classes, ViewModels bridge APIs using Riverpod State Notifiers.</span>
+                            </div>
+                        </div>
+
+                        <div id="project-detail-support" class="project-detail-content">
+                            <div class="project-header">
+                                <span class="project-tech-badge">Flutter</span>
+                                <span class="project-tech-badge">Dart</span>
+                                <span class="project-tech-badge">REST API</span>
+                                <span class="project-tech-badge">Material 3</span>
+                            </div>
+                            <h3>Customer Care & Support App</h3>
+                            <p class="project-text">
+                                Architected a full-featured customer support utility helping business users raise, monitor, and resolve IT/customer issues with adaptive dashboard components.
+                            </p>
+                            
+                            <h4 class="info-title"><i class="fa-solid fa-microchip"></i> Architectural Features</h4>
+                            <ul class="features-list">
+                                <li><strong>Ticket Lifecycle Manager:</strong> Real-time interactive ticket state progression tracking using visually polished transitions (Open &rarr; In Progress &rarr; Resolved).</li>
+                                <li><strong>Adaptive UI Layouts:</strong> Dynamic media querying matching Material Design principles, giving equal visual clarity on foldable phones, standard screens, and large tablets.</li>
+                                <li><strong>API Pagination:</strong> Smooth infinite list scrolling with cached HTTP response queries to optimize server roundtrips.</li>
+                            </ul>
+
+                            <div class="architecture-note">
+                                <i class="fa-solid fa-sitemap"></i>
+                                <span><strong>State Management:</strong> Built with robust Provider controllers separating network triggers from rendering layers.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: CSS Smartphone Screen changing UI based on selection -->
+                    <div class="project-mockup-column">
+                        <div class="phone-mockup project-phone">
+                            <div class="phone-notch"></div>
+                            <div class="phone-earpiece"></div>
+                            <div class="phone-camera"></div>
+                            <div class="phone-screen">
+                                <div class="phone-header">
+                                    <span class="phone-time">10:00</span>
+                                    <div class="phone-icons">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <i class="fa-solid fa-signal"></i>
+                                        <i class="fa-solid fa-battery-full"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Screen Content Area -->
+                                <div class="phone-screen-container" id="project-screen-viewport">
+                                    <!-- Dynamic Screen rendering from JS -->
+                                </div>
+
+                                <div class="phone-home-indicator"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <span class="section-badge">Skill Stack</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">Proficient in core libraries, patterns, and tools optimized for modern mobile development.</p>
+
+                <div class="skills-grid">
+                    <!-- Skill 1 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-brands fa-flutter skill-icon"></i>
+                        </div>
+                        <h3>Flutter & Dart Development</h3>
+                        <p>High-fidelity, responsive UI building, responsive canvas structures, clean custom painters, and smooth widgets.</p>
+                        <div class="skill-percentage-track">
+                            <div class="skill-percentage-fill" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-level-lbl">Advanced (95%)</span>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-diagram-project skill-icon"></i>
+                        </div>
+                        <h3>State Management</h3>
+                        <p>Deep implementation of modern robust architectures: Riverpod, Provider, and BLoC design patterns.</p>
+                        <div class="skill-percentage-track">
+                            <div class="skill-percentage-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-level-lbl">Advanced (90%)</span>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-network-wired skill-icon"></i>
+                        </div>
+                        <h3>REST APIs & Sync</h3>
+                        <p>Managing API network connections, parsing complex JSON structures, persistent session tokens (JWT), and HTTP requests.</p>
+                        <div class="skill-percentage-track">
+                            <div class="skill-percentage-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-level-lbl">Proficient (90%)</span>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-database skill-icon"></i>
+                        </div>
+                        <h3>Databases & Storage</h3>
+                        <p>Writing performant queries using SQFlite databases, managing key-value stores with SharedPreferences, and Firebase integration.</p>
+                        <div class="skill-percentage-track">
+                            <div class="skill-percentage-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-level-lbl">Proficient (85%)</span>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-compass-drafting skill-icon"></i>
+                        </div>
+                        <h3>Architecture Design</h3>
+                        <p>Strictly applying decoupled MVVM structural design, separating logic, reducing widget rebuilds, and securing code testability.</p>
+                        <div class="skill-percentage-track">
+                            <div class="skill-percentage-fill" style="width: 92%"></div>
+                        </div>
+                        <span class="skill-level-lbl">Advanced (92%)</span>
+                    </div>
+
+                    <!-- Skill 6 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-icon-wrapper">
+                            <i class="fa-solid fa-rocket skill-icon"></i>
+                        </div>
+                        <h3>Tools & Deployments</h3>
+                        <p>Expertise in Android Studio, Postman, Git workflow, Gradle management, Xcode configurations, and deploying to stores.</p>
+                        <div class="skill-percentage-track">
+                            <div class="skill-percentage-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="skill-level-lbl">Proficient (88%)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
+                <p class="section-subtitle">Have a project or opportunity? Send me a message and let's coordinate!</p>
+
+                <div class="contact-card glass-card">
+                    <div class="contact-card-grid">
+                        <!-- Left Info -->
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p>Feel free to reach out via email, phone, or LinkedIn. I am always happy to discuss Flutter, Dart, and mobile development.</p>
+
+                            <div class="contact-info-list">
+                                <div class="info-item">
+                                    <i class="fa-solid fa-envelope info-icon"></i>
+                                    <div>
+                                        <span>Email</span>
+                                        <a href="mailto:gowsalrajr01@gmail.com">gowsalrajr01@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fa-solid fa-phone info-icon"></i>
+                                    <div>
+                                        <span>Phone</span>
+                                        <a href="tel:6374858119">+91 63748 58119</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fa-solid fa-location-dot info-icon"></i>
+                                    <div>
+                                        <span>Location</span>
+                                        <p>Tiruchengode, Namakkal, Tamilnadu, India</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-socials">
+                                <a href="https://www.linkedin.com/in/gowsalrajravichandran" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:gowsalrajr01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Right Contact Form -->
+                        <form id="contact-form" class="contact-form-el">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" id="form-name" required placeholder=" ">
+                                    <label for="form-name">Your Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="form-email" required placeholder=" ">
+                                    <label for="form-email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="form-subject" required placeholder=" ">
+                                <label for="form-subject">Subject</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="form-message" required rows="6" placeholder=" "></textarea>
+                                <label for="form-message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Visual Success Alert Popup Modal -->
+    <div class="success-modal-overlay" id="success-overlay">
+        <div class="success-modal glass-card">
+            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out, Gowsalraj R will get back to you shortly.</p>
+            <button id="success-close-btn" class="btn btn-primary">Okay</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Gowsalraj R. Built with passion for Flutter and Mobile UI perfection.</p>
+            <p class="footer-brand">Gowsalraj.dart</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
